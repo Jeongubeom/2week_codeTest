@@ -1,0 +1,15 @@
+문제 4각형 별찍기
+package slow;
+
+public class square_star {
+
+public static void main(String[] args) {
+	for(int i = 0; i < 5; i++){   //줄표시 해주는 for문
+		for(int k=0; k<5; k++) {  //실질적으로 해당 줄에 *마크를 찍는 for문
+			System.out.print("*");
+		}
+		System.out.println("");
+	}
+
+}
+}

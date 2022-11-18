@@ -1,0 +1,26 @@
+홀짝 구별하기
+package slow;
+import java.util.Scanner; //입력 함수 추가
+
+public class even_odd {
+
+public static void main(String[] args) {
+	int even = 0; 
+	
+	Scanner scan = new Scanner(System.in); //입력 연산자
+	
+	for(int i=0; i<100; i++) { // i를 초기화(0) 시키고 100까지 증감
+		System.out.println("입력하세요 : "); // 숫자 입력
+		int num_input = scan.nextInt(); //입력 받은 숫자 num_input에 저장
+		even = num_input%2; //num_input/2를 하고 나머지를 even에 저장 
+	
+		if(even == 0) { //짝수 선별. 나누기2를 하고 나머지가 0으로 떨어지면 짝수
+			System.out.println("입력하신 "+num_input+ "는 짝수 입니다");
+			
+		}else {
+			System.out.println("입력하신 "+num_input+ "는 홀수 입니다");
+			}	
+	}
+
+}
+}

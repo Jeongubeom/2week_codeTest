@@ -1,0 +1,22 @@
+가운데 글자 가져오기
+package slow;
+
+import java.util.Scanner;
+
+public class center_text {
+
+public static void main(String[] args) {
+	
+    Scanner scan = new Scanner(System.in);
+    System.out.print("입력하세요 : ");
+    
+    String s = scan.next();
+
+    s = s.substring((s.length()-1)/2, s.length()/2+1);
+    System.out.println("가운데 문자는"+s+"입니다");
+}
+}
+-.length : 문자열 길이 확인 함수
+-Substring(int start) = start위치부터 끝까지 문자열 반환
+-Substring(int start int end) = start위치부터 end 전까지 문자열반환
+
