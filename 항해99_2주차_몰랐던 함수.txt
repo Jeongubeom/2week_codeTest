@@ -6,5 +6,43 @@
 -int min Math.min : int형 변수 min의 최소값을 알려줌
 
 -Substring(int start) = start위치부터 끝까지 문자열 반환
+	ex.code)  String s = scan.next(); //입력받은 문자열을 s로 이동
+                    s = s.substring((s.length()-1)/2, (s.length()/2+1));
 
 -Substring(int start int end) = start위치부터 end 전까지 문자열반환
+
+-StringBuffer : 인스턴스를 사용하면 문자열을 바로 추가할 수 있으므로, 공간의 낭비도 없으며 속도도 매우 빠르다.
+  변수선언방법
+  ex.code) StringBuffer str = new StringBuffer
+  
+-StringBuffer를 이용한 붙이기 .append()
+  ex.code)
+  붙이기 예제)
+  StringBuffer str = new StringBuffer("Hello");
+
+  System.out.println(str); // Hello
+  System.out.println(str.append(" Java!")); // Hello Java!
+  System.out.println(str); // Hello Java!
+
+-StringBuffer를 이용한 삭제기능 : .delete()-문자열삭제 // .deleteCharAt()-문자 한개만 삭제
+  ex.code)
+  StringBuffer str = new StringBuffer("Hello World!");
+  
+  System.out.println(str); // Hello World!
+  System.out.println(str.delete(5, 11)); // Hello!
+  System.out.println(str); // Hello!
+  System.out.println(str.deleteCharAt(1)); // Hllo!
+  System.out.println(str); // Hllo!
+
+-StringBuffer를 이용한 추가기능 : insert() 
+  ex.code)
+  StringBuffer str = new StringBuffer("Hello");
+
+  System.out.println(str); // Hello
+
+  // System.out.println(str.append(" World!"));
+  System.out.println(str.insert(5, " World!")); // Hello World!
+  System.out.println(str); // Hello World!
+
+  System.out.println(str.insert(5, " Java")); // Hello Java World!
+  System.out.println(str); // Hello Java World!
